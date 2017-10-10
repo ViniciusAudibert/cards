@@ -1,0 +1,6 @@
+<div class="card"
+  (click)="selectCard(card)"
+  [ngClass]="{'card__generic--hover' : selectedCardId === card.id}"
+>
+  <img class="card__image" [src]="card.urlImagem">
+</div>

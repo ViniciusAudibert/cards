@@ -1,0 +1,20 @@
+<section class="jumbotron personDetail__container">
+
+  <div class="personDetail__info">
+    <img
+      class="personDetail__info--image"
+      [src]="resolveImageUrl(person)"
+    >
+    <p class="lead text-muted">Nº {{ index }} de {{ totalPeople }}</p>
+  </div>
+
+  <div class="personDetail__description">
+    <h1 class="jumbotron-heading">{{ person.name }}</h1>
+    <p class="lead text-muted">Quem será ele?</p>
+    <div>
+      <button (click)="previusPerson()" class="btn btn-primary">Voltar</button>
+      <button (click)="nextPerson()" class="btn btn-secondary">Proximo</button>
+    </div>
+  </div>
+
+</section>

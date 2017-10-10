@@ -1,0 +1,38 @@
+.personDetail__container {
+  display: flex;
+  justify-content: center;
+}
+
+.personDetail__info {
+  margin-right: 100px;
+  text-align: center;
+}
+
+.personDetail__info--image {
+  width: 200px;
+  height: auto;
+}
+
+.personDetail__description {
+  align-self: center;
+  text-align: center;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.btn {
+  cursor: pointer;
+}

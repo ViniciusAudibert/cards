@@ -1,0 +1,27 @@
+<header [title]="'Descubra quem é esse ser humaninho?'"></header>
+
+<person-details
+  [person]="getPerson()"
+  [index]="personIndex + 1"
+  [totalPeople]="persons.length"
+  (onNextPerson)="nextPerson()"
+  (onPreviusPerson)="previusPerson()"
+></person-details>
+
+<div class="container">
+  <div class="app__cards">
+    <card *ngFor="let card of cards" [selectedCardId]="getSelectedCardId()" [card]="card" (onSelectCard)="selectCard($event)"></card>
+  </div>
+</div>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Voltar ao topo</a>
+    </p>
+    <p>Descubra quem é!</p>
+    <p>Feito com Angular 4
+      <a href="https://angular.io/">Aprenda angular cara</a> e
+      <a href="#">algo aleatório aqui :)</a>.</p>
+  </div>
+</footer>
